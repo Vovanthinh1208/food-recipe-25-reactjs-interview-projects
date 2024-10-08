@@ -51,7 +51,9 @@ export default function Details() {
             onClick={() => handleAddToFavorite(recipeDetailsData?.recipe)}
             className="p-3 px-8 rounded-lg text-sm uppercase font-medium tracking-wider mt-3 inline-block shadow-md bg-black text-white"
           >
-            {favoritesList && favoritesList.length > 0 && favoritesList.findIndex(
+            {favoritesList &&
+            favoritesList.length > 0 &&
+            favoritesList.findIndex(
               (item) => item.id === recipeDetailsData?.recipe?.id
             ) !== -1
               ? "Remove from favorites"
